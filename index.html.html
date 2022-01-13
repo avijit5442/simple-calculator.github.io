@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./calc01.js"></script>
+</head>
+
+<body>
+<style>
+.content{border: 1px dotted blueviolet;
+        margin-left: 300px;
+        margin-right: 300px;
+        background-color: aquamarine;}
+  .btn{margin-top: 10px;
+       margin-left: 20px;
+       ;}
+  
+   .first{text-align: center;}
+   .second{text-align: center;}
+   .third{text-align: center;}
+   #number4{margin-left: 80px;}
+
+    #km{margin-top: 10px;
+        margin-left: 100px;
+        position: absolute}
+    #mile{margin-top: 10px;
+        margin-left: -40px;}
+</style>
+<div class="content">
+<div class="first">
+    <h3>Basic Math calculator:</h3>
+    <input type="text" id="number1"></input>
+    <input type="text" id="number2"></input>
+    
+ <div class="btn"><button id="sum" style="background-color:rgb(59, 224, 59);" onclick=add()>Add</button>
+    <button id="sub" style="background-color:yellow"; onclick=sub()>Sub</button>
+    <button id ="multi" style="background-color:burlywood" onclick=multi()>Multiply</button>
+    <button id ="divide" style="background-color:red" onclick=divide()>divide</button>
+</div>
+    <p id ="res"></p>
+    <p id="result"></p>
+    
+</div>
+<div class="second">
+    <h3>Length converter:</h1>
+     <input type="text" placeholder="Length in Kilometers" id="number3"></input>
+     <input type="text" placeholder="Length in miles" id="number4"></input>
+     
+    <div>
+     <button id ="mile" style="background-color:yellow" onclick="mile()">To mile</button>
+     <button id ="km" style="background-color:red" onclick="km()">To KM</button>
+    </div>
+     <p id = "result2"></p>
+    
+ </div>
+<div class="third">
+    <h3>Scientific calculator:</h3>
+    <input type ="text" id="number5"></input>
+<div class="btn">
+    <button id ="sin" style="background-color:rgb(59, 224, 59)" onclick=sqr()>Square</button>
+    <button id ="cos" style="background-color:yellow" onclick=cube()>cube</button>
+    <button id ="cot" style="background-color:burlywood" onclick=sqrt()>Square Root</button>
+    <button id ="cot" style="background-color:burlywood" onclick=sqc()>Square cube</button>
+    <button id ="tan" style="background-color:red" onclick=log()>log</button>
+    
+</div>  
+<p id= "result3"></p>
+
+
+</div>
+</div>
+</body>
+</html>
